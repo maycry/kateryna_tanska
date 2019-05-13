@@ -123,27 +123,22 @@ h1{
     font-weight: normal;
 }
 
-.block50{
-    width:50%;
-}
-
-.s-hero-header,.pre-header{
-    display: flex;
-}
-
 .s-hero-header{
     font-size: 1.6em;
     padding-top: .75em;
 }
 .s-hero-logo{
+    flex: 1;
 }
 
 .s-hero-menu{
     text-align: right;
+    flex: 1;
 }
 
 .menu-list{
     margin: 0;
+    padding: 0;
 }
 
 .menu-item{
@@ -160,6 +155,19 @@ h1{
     color: black;
 }
 
+.pre-header-book{
+    text-align: right;
+    flex: 1;
+}
+
+.pre-header-slogan{
+    flex: 1;
+}
+
+.pre-header-slogan h1{
+    margin: 0;
+}
+
 .book-button{
     background-color: black;
     padding: 0 8em;
@@ -172,15 +180,6 @@ h1{
     font-size: 1.3125rem;
 }
 
-.pre-header-slogan h1{
-    margin: 0;
-}
-
-.pre-header-book{
-    text-align: right;
-}
-
-
 .pre-header{
     padding-top: 5em;
     padding-bottom: 2em;
@@ -189,7 +188,7 @@ h1{
 .hero-image{
     background-image: url(../img/hero.jpg);
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -227,6 +226,10 @@ h1{
     display: inline-block;
     vertical-align: middle;
     height: 100%;
+}
+
+.flex1{
+    flex: 1;
 }
 
 /*
@@ -304,8 +307,36 @@ h1{
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (max-width: 1280px) {
+   @media only screen and (min-width: 900px) {
     /* Style adjustments for viewports that meet the condition */
+
+    .s-hero-header,.pre-header{
+        display: flex;
+    }
+    .hero-image{
+        height: 70vh;
+    }
+}
+
+
+    @media only screen and (max-width: 900px){
+
+    .book-button{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .s-hero-menu{
+        text-align: left;
+    }
+
+    .menu-item{
+        padding-left: 0;
+        padding-right: 1rem;
+    }
+
 }
 
 @media print,
