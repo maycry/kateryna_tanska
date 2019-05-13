@@ -12,6 +12,17 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@font-face {
+    font-family: 'Eaves';
+    src: url('../webfonts/395A95_0_0.eot'); /* IE9 Compat Modes */
+    src: url('../webfonts/395A95_0_0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../webfonts/395A95_0_0.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../webfonts/395A95_0_0.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../webfonts/395A95_0_0.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
    html {
     color: #222;
     font-size: 1em;
@@ -101,8 +112,9 @@ textarea {
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
+body {
+    font-family: 'Eaves', sans-serif;
+}
 
 
 
