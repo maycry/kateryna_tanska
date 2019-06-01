@@ -22,6 +22,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Sofia';
+    src: url('../webfonts/3982D7_0_0.eot'); /* IE9 Compat Modes */
+    src: url('../webfonts/3982D7_0_0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../webfonts/3982D7_0_0.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../webfonts/3982D7_0_0.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../webfonts/3982D7_0_0.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: bold;
+    font-style: normal;
+}
 
    html {
     color: #222;
@@ -129,6 +139,22 @@ h1{
     letter-spacing: -0.5px;
 }
 
+h3{
+    font-size: 1rem;
+    color: #DACBA6;
+    letter-spacing: 2px;
+    line-height: 3.125rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+}
+p{
+    font-size: 2rem;
+    letter-spacing: -0.3px;
+    line-height: 3.125rem;
+    margin-bottom: 3.125rem;
+    margin-top: 0;
+}
 .b-header{
     font-size: 1.5em;
     padding: 1.4375em 0 1.360em;
@@ -201,7 +227,104 @@ h1{
 @keyframes spining {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
-  }
+}
+
+
+/* ==========================================================================
+   Paragraph
+   ========================================================================== */
+.paragraph{
+    padding: 7rem 0 5rem;
+    margin: 0 auto;
+    width: 65%;
+}
+.i-flower{
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 94px;
+    margin-left: -140px;
+    margin-top: -28px;
+}
+
+
+
+/* ==========================================================================
+   Media Queries 
+   ========================================================================== */
+
+@media only screen and (min-width: 900px) {
+
+}
+
+
+@media only screen and (max-width: 900px){
+    .wrapper{
+        padding: 0 1em;
+    }
+
+    .b-header{
+        display: block;
+        padding: 1em 0 0.95em;
+    }
+
+    h1{
+        font-size: 2.625rem;
+        line-height: 3.4375rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .menu{
+        text-align: left;
+    }
+
+    .menu-item{
+        padding-right: 1em;
+        padding-left: 0em;
+    }
+
+    .hero{
+        height: auto;
+        background-position: 80% bottom;
+        background-size: 297px 432px;
+    }
+
+    .intro{
+        width:100%;
+        top: 0;
+        margin-top: 0;
+        padding-top: 1em;
+        position: static;
+    }
+
+    .moto{
+        position: static;
+        margin-top: 1rem;
+        padding-bottom: 20rem;
+        margin-left: -0.3rem;
+    }
+
+    .moto img{
+        width: 124px;
+        height: 124px;
+    }
+
+    .i-flower{
+        position: static;
+        display: block;
+        width: 88px;
+        height: 94px;
+        margin: 0 0 1.5rem 0;
+    }
+    .paragraph{
+        width: 100%;
+    }
+}
+
 
 
 
@@ -295,68 +418,6 @@ h1{
   clear: both;
 }
 
- 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 900px) {
-
-}
-
-
-@media only screen and (max-width: 900px){
-    .wrapper{
-        padding: 0 1em;
-    }
-
-    .b-header{
-        display: block;
-        padding: 1em 0 0.95em;
-    }
-
-    h1{
-        font-size: 2.625rem;
-        line-height: 3.4375rem;
-    }
-
-    .menu{
-        text-align: left;
-    }
-
-    .menu-item{
-        padding-right: 1em;
-        padding-left: 0em;
-    }
-
-    .hero{
-        height: auto;
-        background-position: 80% bottom;
-        background-size: 297px 432px;
-    }
-
-    .intro{
-        width:100%;
-        top: 0;
-        margin-top: 0;
-        padding-top: 1em;
-        position: static;
-    }
-
-    .moto{
-        position: static;
-        margin-top: 1rem;
-        padding-bottom: 20rem;
-        margin-left: -0.3rem;
-    }
-
-    .moto img{
-        width: 124px;
-        height: 124px;
-    }
-}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
