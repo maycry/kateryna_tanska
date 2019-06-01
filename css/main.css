@@ -192,6 +192,9 @@ h1{
     top:50%;
     margin-top: -75px;
     right: 10%;
+}
+
+.moto img{
     animation: spining 40s linear infinite;
 }
 
@@ -308,22 +311,32 @@ h1{
     .wrapper{
         padding: 0 1em;
     }
+
     .b-header{
         display: block;
         padding: 1em 0 0.95em;
     }
+
+    h1{
+        font-size: 2.625rem;
+        line-height: 3.4375rem;
+    }
+
     .menu{
         text-align: left;
     }
+
     .menu-item{
         padding-right: 1em;
         padding-left: 0em;
     }
+
     .hero{
         height: auto;
         background-position: 75% bottom;
         background-size: 297px 432px;
     }
+
     .intro{
         width:90%;
         top: 0;
@@ -331,11 +344,14 @@ h1{
         padding-top: 1em;
         position: static;
     }
+
     .moto{
         position: static;
         margin-top: 1rem;
         padding-bottom: 20rem;
+        margin-left: -0.3rem;
     }
+
     .moto img{
         width: 124px;
         height: 124px;
