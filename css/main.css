@@ -13,12 +13,12 @@
    ========================================================================== */
 
 @font-face {
-    font-family: 'Eaves';
-    src: url('../webfonts/395A95_0_0.eot'); /* IE9 Compat Modes */
-    src: url('../webfonts/395A95_0_0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-            url('../webfonts/395A95_0_0.woff2') format('woff2'), /* Super Modern Browsers */
-            url('../webfonts/395A95_0_0.woff') format('woff'), /* Pretty Modern Browsers */
-            url('../webfonts/395A95_0_0.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: 'Sofia';
+    src: url('../webfonts/3982CB_0_0.eot'); /* IE9 Compat Modes */
+    src: url('../webfonts/3982CB_0_0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../webfonts/3982CB_0_0.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../webfonts/3982CB_0_0.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../webfonts/3982CB_0_0.ttf')  format('truetype'); /* Safari, Android, iOS */
     font-weight: normal;
     font-style: normal;
 }
@@ -108,30 +108,39 @@ textarea {
 
 
 
-
  /* ==========================================================================
-   Author's custom styles
+   General
    ========================================================================== */
 
 body {
-    font-family: 'Eaves', sans-serif;
+    font-family: 'Sofia', sans-serif;
 }
+
+
+
+ /* ==========================================================================
+   Header
+   ========================================================================== */
 
 h1{
-    font-size: 2.5rem;
-    line-height: 45px;
+    font-size: 3.125rem;
+    line-height: 3.75rem;
     font-weight: normal;
+    letter-spacing: -0.5px;
 }
 
-.s-hero-header{
-    font-size: 1.6em;
-    padding-top: .75em;
+.b-header{
+    font-size: 1.5em;
+    padding: 1.4375em 0 1.360em;
+    line-height: 1.675em;
+    display: flex;
 }
-.s-hero-logo{
+
+.logo{
     flex: 1;
 }
 
-.s-hero-menu{
+.menu{
     text-align: right;
     flex: 1;
 }
@@ -148,61 +157,48 @@ h1{
 
 .menu-item a{
     text-decoration: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
     color: black;
+    transition: .3s;
 }
-.menu-item a{
-    text-decoration: none;
-    color: black;
-}
-
-.pre-header-book{
-    text-align: right;
-    flex: 1;
-}
-
-.pre-header-slogan{
-    flex: 1;
-}
-
-.pre-header-slogan h1{
-    margin: 0;
-}
-
-.book-button{
-    background-color: black;
-    padding: 0 8em;
-    line-height: 5rem;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.0625rem;
-    font-size: 1.3125rem;
-}
-
-.pre-header{
-    padding-top: 5em;
-    padding-bottom: 2em;
-}
-
-.hero-image{
-    background-image: url(../img/hero.jpg);
-    width: 100%;
-    height: 50vh;
-    background-position: 50% 50%;
-    background-size: cover;
+.menu-item a:hover{
+    border-bottom-color: rgba(0, 0, 0, 1);
 }
 
 
+ /* ==========================================================================
+   Hero
+   ========================================================================== */
 
+.hero{
+    background-color: #F3E8CC;
+    height: calc(100vh - 100px);
+    background-image: url(../img/hero-2.jpg);
+    background-position: 65% bottom;
+    background-size: 496px 720px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.intro{
+    position: absolute;
+    width: 560px;
+    top:50%;
+    margin-top: -150px;
+}
+.moto{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top:50%;
+    margin-top: -75px;
+    right: 10%;
+    /* animation: spining 40s linear infinite; */
+}
 
-
-
-
-
-
-
-
+@keyframes spining {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
 
 
 
@@ -214,7 +210,7 @@ h1{
  * Hide visually and from screen readers
  */
 
- .hidden {
+.hidden {
   display: none !important;
 }
 
@@ -226,10 +222,6 @@ h1{
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-}
-
-.flex1{
-    flex: 1;
 }
 
 /*
@@ -307,36 +299,45 @@ h1{
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 900px) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 900px) {
 
-    .s-hero-header,.pre-header{
-        display: flex;
-    }
-    .hero-image{
-        height: 70vh;
-    }
 }
 
 
-    @media only screen and (max-width: 900px){
-
-    .book-button{
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
+@media only screen and (max-width: 900px){
+    .wrapper{
+        padding: 0 1em;
     }
-
-    .s-hero-menu{
+    .b-header{
+        display: block;
+        padding: 1em 0 0.95em;
+    }
+    .menu{
         text-align: left;
     }
-
     .menu-item{
-        padding-left: 0;
-        padding-right: 1rem;
+        padding-right: 1em;
+        padding-left: 0em;
     }
-
+    .hero{
+        background-position: 65% bottom;
+        background-size: 297px 432px;
+    }
+    .intro{
+        width:90%;
+        top: 0;
+        margin-top: 0;
+        padding-top: 1em;
+        position: static;
+    }
+    .moto{
+        position: static;
+        margin-top: 1rem;
+    }
+    .moto img{
+        width: 124px;
+        height: 124px;
+    }
 }
 
 @media print,
