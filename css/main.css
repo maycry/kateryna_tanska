@@ -248,12 +248,34 @@ p{
 }
 
 
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+.wrapper{
+    padding:0 1.875rem;
+}
+.va:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
 
 /* ==========================================================================
    Media Queries 
    ========================================================================== */
 
-@media only screen and (min-width: 900px) {
+   @media only screen and (min-width: 900px){
 
 }
 
@@ -323,31 +345,6 @@ p{
     .paragraph{
         width: 100%;
     }
-}
-
-
-
-
- /* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-.wrapper{
-    padding:0 1.875rem;
-}
-.va:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
 }
 
 /*
