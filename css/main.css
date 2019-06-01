@@ -192,7 +192,7 @@ h1{
     top:50%;
     margin-top: -75px;
     right: 10%;
-    /* animation: spining 40s linear infinite; */
+    animation: spining 40s linear infinite;
 }
 
 @keyframes spining {
@@ -320,7 +320,8 @@ h1{
         padding-left: 0em;
     }
     .hero{
-        background-position: 65% bottom;
+        height: auto;
+        background-position: 75% bottom;
         background-size: 297px 432px;
     }
     .intro{
@@ -333,6 +334,7 @@ h1{
     .moto{
         position: static;
         margin-top: 1rem;
+        padding-bottom: 20rem;
     }
     .moto img{
         width: 124px;
