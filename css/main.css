@@ -620,11 +620,11 @@ small{
     .b-contact{
         width: 100%;
         display: block;
-        padding: 2rem 0;
+        padding: 0.125rem 0;
     }
     .contact-image{
         margin: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         max-width: 400px;
     }
     .contact-info{
