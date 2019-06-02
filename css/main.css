@@ -259,6 +259,7 @@ small{
 .paragraph h3{
     color: #DACBA6;
 }
+
 .i-flower{
     position: absolute;
     display: block;
@@ -277,6 +278,16 @@ small{
     margin: 0 0 1.5rem 0;
     margin-left: -30px;
     margin-top: -30px;
+}
+
+.i-swirl{
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 96px;
+    margin: 0 0 1.5rem 0;
+    margin-left: -30px;
+    margin-top: 30px;
 }
 
 
@@ -333,6 +344,7 @@ small{
     margin: 1em;
     display: inline-block;
     text-decoration: none;
+    padding-top: .2rem;
     transition: .3s;
 }
 
@@ -345,7 +357,7 @@ small{
     background-color: #FBF9F1;
 }
 .button.button-secondary:hover{
-    background-color: #F6F3EC;
+    background-color: #f9f5ec;
 }
 
 .logo-centered{
@@ -426,6 +438,30 @@ small{
 }
 
 
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+.b-contact{
+    padding: 5rem 0 6rem;
+    margin-bottom: 6rem;
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contact-image{
+    margin-right: 4rem;
+    flex: 1;
+}
+
+.contact-image img{
+    width: 100%;
+}
+
+.contact-info{
+    flex: 1
+}
+
 
  /* ==========================================================================
    Helper classes
@@ -457,12 +493,30 @@ small{
    Media Queries 
    ========================================================================== */
 
-   @media only screen and (min-width: 900px){
+@media only screen and (min-width: 1024px){
+    .hiddenedesktop{
+        display: none !important;
+    }
+}
 
+@media only screen and (max-width: 1200px){
+    .gallery{
+        width: 800px;
+    }
+    .paragraph{
+        width: 700px;
+    }
+    .service-table{
+        width: 50%;
+    }
 }
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1024px){
+
+    .hiddenedevice{
+        display: none !important;
+    }
     .wrapper{
         padding: 0 1em;
     }
@@ -525,7 +579,12 @@ small{
         margin: 0 0 1.5rem 0;
     }
 
-   
+    .i-swirl{
+        
+        margin-left: 0;
+        margin-top: -30px;
+        right: 40px;
+    }
 
     .paragraph{
         width: 100%;
@@ -561,6 +620,19 @@ small{
     .service-image{
         display: none;
     }
+
+    .b-contact{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .contact-image{
+        margin: 0;
+        flex: 0 0 100%;
+    }
+    .contact-info{
+        flex: 0 0 100%;
+    }
+
 }
 
 /*
