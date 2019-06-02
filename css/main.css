@@ -266,6 +266,17 @@ small{
     height: 94px;
     margin-left: -140px;
     margin-top: -28px;
+
+}
+
+.i-girl{
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 99px;
+    margin: 0 0 1.5rem 0;
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
 
@@ -297,7 +308,7 @@ small{
    ========================================================================== */
 
 .b-footer{
-    padding: 7rem 0 9rem;
+    padding: 7rem 0 6rem;
     text-align: center;
 }   
 
@@ -338,6 +349,7 @@ small{
 }
 
 .logo-centered{
+    margin-bottom: 2rem;
 }
 
 
@@ -401,6 +413,11 @@ small{
 .policy-item{
     flex: 1;
     padding-right: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.policy-item h3 {
+    margin: 0;
 }
 
 .policy-item ul{
@@ -507,6 +524,9 @@ small{
         height: 94px;
         margin: 0 0 1.5rem 0;
     }
+
+   
+
     .paragraph{
         width: 100%;
     }
