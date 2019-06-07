@@ -599,10 +599,10 @@ small{
         margin-bottom:1rem;
     }
 
-    .button{
-        display: block;
-        width: 100%;
-        margin: 1em 0;
+    .button, .button-override{
+        display: block !important;
+        width: 100% !important;
+        margin: 1em 0 !important;
     }
 
     .b-policies{
