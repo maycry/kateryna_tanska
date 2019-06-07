@@ -791,4 +791,29 @@ a[href^="tel"] {
     }
 }
 
+body .acuity-embed-button {
+    background: transparent !important;
+    padding: 0 !important;
+    -webkit-box-shadow: none !important;
+    border-radius: 0 !important;
+    text-decoration: none !important;
+    display: inline !important;
+    color: black !important;
+}
 
+body .cta-group .button-override{
+    background-color: rgba(0, 0, 0, 1) !important;
+    line-height: 5.625rem;
+    color: #F3E8CC !important;
+    font-size: 1rem !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 21.875rem;
+    border: none;
+    margin: 1em;
+    display: inline-block !important;
+    text-decoration: none;
+    padding-top: .2rem !important;
+    transition: .3s;
+}
