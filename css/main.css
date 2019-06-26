@@ -21,7 +21,6 @@
             url('../webfonts/3982CB_0_0.ttf')  format('truetype'); /* Safari, Android, iOS */
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'Sofia';
@@ -32,7 +31,6 @@
             url('../webfonts/3982D7_0_0.ttf')  format('truetype'); /* Safari, Android, iOS */
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
 }
 
    html {
@@ -193,7 +191,7 @@ small{
     text-decoration: none;
     border-bottom: 2px solid rgba(0, 0, 0, .1);
     color: black;
-    transition: .3s;
+    transition: .3s border-color;
 }
 
 .menu-item.active a{
@@ -347,7 +345,7 @@ small{
     display: inline-block;
     text-decoration: none;
     padding-top: .2rem;
-    transition: .3s;
+    transition: .3s border-color;
 }
 
 .button:hover{
@@ -791,31 +789,4 @@ a[href^="tel"] {
     h3 {
         page-break-after: avoid;
     }
-}
-
-body .acuity-embed-button {
-    background: transparent !important;
-    padding: 0 !important;
-    -webkit-box-shadow: none !important;
-    border-radius: 0 !important;
-    text-decoration: none !important;
-    display: inline !important;
-    color: black !important;
-}
-
-body .cta-group .button-override{
-    background-color: rgba(0, 0, 0, 1) !important;
-    line-height: 5.625rem;
-    color: #F3E8CC !important;
-    font-size: 1rem !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    width: 21.875rem;
-    border: none;
-    margin: 1em;
-    display: inline-block !important;
-    text-decoration: none;
-    padding-top: .2rem !important;
-    transition: .3s;
 }
