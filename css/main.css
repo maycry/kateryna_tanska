@@ -221,6 +221,7 @@ small{
     background-size: 496px 720px;
     background-repeat: no-repeat;
     position: relative;
+    min-height: 660px;
 }
 .intro{
     position: absolute;
